@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninefold Legends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <div class="stage" id="stage">
+        <canvas
+          id="game-canvas"
+          width="320"
+          height="180"
+          aria-label="Schermata di gioco Ninefold Legends"
+        ></canvas>
+        <div id="overlay" role="dialog" aria-modal="true"></div>
+      </div>
+    </main>
+    <!-- ES6: un solo entry point importa il resto dei moduli. -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
